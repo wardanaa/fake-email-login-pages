@@ -1,0 +1,28 @@
+
+<!-- saved from url=(0129)https://accounts.youtube.com/accounts/CheckConnection?pmpo=https%3A%2F%2Faccounts.google.com&v=1714160091&timestamp=1428581062386 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript"> <!--
+    var G,Ga=/\s*;\s*/;var Gb=function(){try{return new XMLHttpRequest}catch(b){for(var d=["MSXML2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"],a=0;a<d.length;a++)try{return new ActiveXObject(d[a])}catch(c){}}return null},Gc=function(){this.b=Gb();this.parameters={}};
+Gc.prototype.send=function(b,d){var a=[],c;for(c in this.parameters){var e=this.parameters[c];a.push(c+"="+encodeURIComponent(e))}var a=a.join("&"),f=this.b;f.open("POST",b,!0);f.setRequestHeader("Content-type","application/x-www-form-urlencoded");f.onreadystatechange=function(){4==f.readyState&&d({status:f.status,text:f.responseText})};f.send(a)};
+Gc.prototype.get=function(b,d){var a=this.b;a.open("GET",b,!0);a.onreadystatechange=function(){4==a.readyState&&d({status:a.status,text:a.responseText})};a.send()};var Ge=function(b){this.a=b;this.e=this.d();if(null==this.a)throw new Gd("Empty module name");};G=Ge.prototype;G.d=function(){var b=window.location.pathname;return b&&0==b.indexOf("/accounts")?"/accounts/JsRemoteLog":"/JsRemoteLog"};
+G.c=function(b,d,a){var c=this.e,e=this.a||"",c=c+"?module="+encodeURIComponent(e);b=b||"";c=c+"&type="+encodeURIComponent(b);d=d||"";c=c+"&msg="+encodeURIComponent(d);a=a||[];for(b=0;b<a.length;b++)c=c+"&arg="+encodeURIComponent(a[b]);try{var f=Math.floor(1E4*Math.random()),c=c+"&r="+String(f)}catch(h){}return c};G.send=function(b,d,a){var c=new Gc;c.parameters={};try{var e=this.c(b,d,a);c.get(e,function(){})}catch(f){}};G.error=function(b,d){this.send("ERROR",b,d)};
+G.warn=function(b,d){this.send("WARN",b,d)};G.info=function(b,d){this.send("INFO",b,d)};G.f=function(b){var d=this;return function(){try{return b.apply(null,arguments)}catch(a){throw d.error("Uncatched exception: "+a),a;}}};var Gd=function(){};var Gf=Gf||new Ge("check_connection"),Gg=function(b,d){if(b){var a;!d||0>=d?a=0:(a=(new Date).getTime()-d,a=!a||0>a?0:a);var c;var e="CheckConnectionTempCookie"+String(Math.floor(1E3*Math.random()));c=String(Math.floor(1E6*Math.random()));var f=new Date((new Date).getTime()+1E4);document.cookie=e+"="+c+"; Expires="+f.toUTCString();b:{if(document.cookie)for(var e=e+"=",f=document.cookie.split(Ga),h=0;h<f.length;h++){var g=f[h],g=g.replace(/^\s+/,""),g=g.replace(/\s+$/,"");if(0==g.indexOf(e)){e=g.substr(e.length);
+break b}}e=void 0}c=e==c?!0:!1;e="0";c&&(e="1");return a=b+":"+String(a)+":"+e}Gf.error("Empty/null domain symbol")};G_getMsgToSend=Gf.f(Gg);
+
+
+    function getMsg() {
+      
+        
+        return G_getMsgToSend('youtube',
+          1428581062386);
+      
+    }
+
+    if (window.postMessage && window.parent) {
+      window.parent.postMessage(getMsg(),
+          'https:\x2F\x2Faccounts.google.com');
+    }
+  --> </script>
+  </head>
+<body>
+</body></html>
